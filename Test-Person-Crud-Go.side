@@ -1,0 +1,279 @@
+{
+  "id": "e8b38adf-9152-48d9-8acf-fec70db71d25",
+  "version": "2.0",
+  "name": "Test-Person-Crud-Go",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "39c790ca-67d4-4ad2-bbee-2190972b44be",
+    "name": "Add Employee",
+    "commands": [{
+      "id": "4d561326-cec4-4fa5-a1f5-9db67ae6cb7f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43e8eb80-ea69-43fe-b637-e4a1453cb060",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cebc0c7-1924-4072-a15d-3d47bf35617e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Employee",
+      "targets": [
+        ["linkText=Add Employee", "linkText"],
+        ["css=.container > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Employee')]", "xpath:link"],
+        ["xpath=//a[@id='']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '/create')])[2]", "xpath:href"],
+        ["xpath=//body/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c91f7c25-5bbf-46fd-ae50-e99358cbc70c",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2b333d8-131b-45d1-9d70-147817874d2e",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Alvarez"
+    }, {
+      "id": "fa5c497f-f20f-464a-9a10-e67e1e4ac345",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "445e589d-97c4-42a0-9457-076762a0a69b",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "jalavrez@gmail.com"
+    }, {
+      "id": "079560f9-7edb-4c4a-879c-d154b02189bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7e6c7eaa-de2a-42bd-af2f-d54ef6e0ff14",
+    "name": "Delete Employee",
+    "commands": [{
+      "id": "9a9bd634-48ab-4edc-91ca-728090aee351",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86c0b4de-abad-480c-8195-a43a329089f1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3bc3544-2ba8-42d9-96da-0e9e628111f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > td > .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(1) > td > .btn-danger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cff5bb7-527c-402c-b656-6af19d361357",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(1) > td > .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(1) > td > .btn-danger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab4c6a8d-376b-4e7b-aca5-e91f439e4061",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(1) > td > .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(1) > td > .btn-danger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23d33743-15af-4a01-bdc2-bb7871f87cfc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=#myModal14 .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=(//a[@id=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='myModal14']/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/delete?id=14')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "63da2889-971f-4a66-8982-259d2e4b21c5",
+    "name": "Edit Employee",
+    "commands": [{
+      "id": "a5ba5f31-d503-45e5-bea7-12c4840b3e9c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8343fa45-515b-451b-ba86-a282fb18b544",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59a10ed8-1de9-41cc-a557-d3470532c727",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .btn-warning",
+      "targets": [
+        ["css=tr:nth-child(5) .btn-warning", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[5]", "xpath:link"],
+        ["xpath=(//a[@id=''])[10]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/edit?id=21')]", "xpath:href"],
+        ["xpath=//tr[5]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f4dccfb-1a68-476b-ad44-fa8d1df6e59b",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "739e3d5a-0e40-4bea-9536-e3048f02837a",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Juan Alex Alvarez"
+    }, {
+      "id": "a6948bf5-8501-43a2-9d83-2c655ad33bf0",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb58e7ac-4132-4858-8e5a-67faf9a00250",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "jalavrezalex@gmail.com"
+    }, {
+      "id": "8a3f409c-7740-46e6-a987-bca288b746ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "085feaca-ce30-42c1-b0f5-1f40487bbc8c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
